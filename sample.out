@@ -1,0 +1,29 @@
+========================================================================
+GroupAwareScheduler: begin scheduling
+Max Num workers per topology: 3
+Assigned Num Workers: 0
+Supervisors: {0a0f3479-d66d-48b4-83d0-d2951a60aa0f=org.apache.storm.scheduler.SupervisorDetails@7b48c015, 81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1=org.apache.storm.scheduler.SupervisorDetails@6acdb525}
+-------------------------------------------
+Supervisor 0a0f3479-d66d-48b4-83d0-d2951a60aa0f
+Assignable worker ports: [1024, 1025, 1026]
+Assignable worker slots: [0a0f3479-d66d-48b4-83d0-d2951a60aa0f:1024, 0a0f3479-d66d-48b4-83d0-d2951a60aa0f:1025, 0a0f3479-d66d-48b4-83d0-d2951a60aa0f:1026]
+Available worker ports: [1024, 1025, 1026]
+Available worker slots: [0a0f3479-d66d-48b4-83d0-d2951a60aa0f:1024, 0a0f3479-d66d-48b4-83d0-d2951a60aa0f:1025, 0a0f3479-d66d-48b4-83d0-d2951a60aa0f:1026]
+-------------------------------------------
+Supervisor 81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1
+Assignable worker ports: [1027, 1028, 1029]
+Assignable worker slots: [81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1:1027, 81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1:1028, 81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1:1029]
+Available worker ports: [1027, 1028, 1029]
+Available worker slots: [81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1:1027, 81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1:1028, 81aec9ca-fbe9-44a4-ac24-4f5646c6c1c1:1029]
+-------------------------------------------
+needs scheduling(component->executor): {__acker=[[1, 1], [2, 2], [3, 3]], exclaim2=[[14, 14], [10, 10], [15, 15], [11, 11], [12, 12], [13, 13]], exclaim1=[[5, 5], [6, 6], [7, 7], [8, 8], [4, 4], [9, 9]], word=[[23, 23], [19, 19], [24, 24], [20, 20], [25, 25], [16, 16], [21, 21], [17, 17], [22, 22], [18, 18]]}
+needs scheduling(executor->compoenents): {[23, 23]=word, [14, 14]=exclaim2, [5, 5]=exclaim1, [19, 19]=word, [10, 10]=exclaim2, [1, 1]=__acker, [24, 24]=word, [15, 15]=exclaim2, [6, 6]=exclaim1, [20, 20]=word, [11, 11]=exclaim2, [2, 2]=__acker, [25, 25]=word, [16, 16]=word, [7, 7]=exclaim1, [21, 21]=word, [12, 12]=exclaim2, [3, 3]=__acker, [17, 17]=word, [8, 8]=exclaim1, [22, 22]=word, [13, 13]=exclaim2, [4, 4]=exclaim1, [18, 18]=word, [9, 9]=exclaim1}
+current assignments: {}
+Groups are: {one_machine=[exclaim2, exclaim1]}
+Grouped executors [[[14, 14], [5, 5]], [[10, 10], [6, 6]], [[15, 15], [7, 7]], [[11, 11], [8, 8]], [[12, 12], [4, 4]], [[13, 13], [9, 9]]]
+Assigned executors:[[[14, 14], [5, 5]], [[10, 10], [6, 6]]] to slot: [0a0f3479-d66d-48b4-83d0-d2951a60aa0f, 1024]
+Assigned executors:[[[15, 15], [7, 7]], [[11, 11], [8, 8]]] to slot: [0a0f3479-d66d-48b4-83d0-d2951a60aa0f, 1025]
+Assigned executors:[[[12, 12], [4, 4]], [[13, 13], [9, 9]]] to slot: [0a0f3479-d66d-48b4-83d0-d2951a60aa0f, 1026]
+GroupAwareScheduler: done with scheduling
+========================================================================
+3581 [timer] INFO  o.a.s.d.nimbus - Setting new assignment for topology id JARVIS-1-1473294348: #org.apache.storm.daemon.common.Assignment{:master-code-dir "/tmp/fa3fee71-fce5-4480-9e54-c4e529210832", :node->host {"0a0f3479-d66d-48b4-83d0-d2951a60aa0f" "mark1.stark.org"}, :executor->node+port {[8 8] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1025], [12 12] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1026], [7 7] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1025], [6 6] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1024], [9 9] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1026], [11 11] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1025], [13 13] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1026], [5 5] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1024], [10 10] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1024], [14 14] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1024], [4 4] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1026], [15 15] ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1025]}, :executor->start-time-secs {[8 8] 1473294349, [12 12] 1473294349, [7 7] 1473294349, [6 6] 1473294349, [9 9] 1473294349, [11 11] 1473294349, [13 13] 1473294349, [5 5] 1473294349, [10 10] 1473294349, [14 14] 1473294349, [4 4] 1473294349, [15 15] 1473294349}, :worker->resources {["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1025] [0.0 0.0 0.0], ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1024] [0.0 0.0 0.0], ["0a0f3479-d66d-48b4-83d0-d2951a60aa0f" 1026] [0.0 0.0 0.0]}}

@@ -64,6 +64,7 @@ public class GroupAwareScheduler implements IScheduler {
 
     @Override
     public void schedule(Topologies topologies, Cluster cluster) {
+        System.out.println("========================================================================");
         System.out.println("GroupAwareScheduler: begin scheduling");
         // Gets the topology which we want to schedule
         // The custom scheduler is run only on the specified topology, while using the default scheduler for others
@@ -79,6 +80,7 @@ public class GroupAwareScheduler implements IScheduler {
                 System.out.println("Assigned Num Workers: " + cluster.getAssignedNumWorkers(topology));
                 Map<String, SupervisorDetails> supervisorsMap = cluster.getSupervisors();
                 System.out.println("Supervisors: " + supervisorsMap);
+                System.out.println("-------------------------------------------");
                 for (String supervisor : supervisorsMap.keySet()) {
                     System.out.println("Supervisor " + supervisor);
                     System.out.println("Assignable worker ports: " + cluster.getAssignablePorts(supervisorsMap.get(supervisor)));
@@ -190,6 +192,7 @@ public class GroupAwareScheduler implements IScheduler {
             }
         }
         System.out.println("GroupAwareScheduler: done with scheduling");
+        System.out.println("========================================================================");
         
         // let system's even scheduler handle the rest scheduling work
         new EvenScheduler().schedule(topologies, cluster);
