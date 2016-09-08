@@ -15,3 +15,7 @@ only  grouped logically and not tied to a particular machine. The default schedu
 up the job of assigning processes to machines.
 The components can be added to the same group by specifying the same group ID via the
 addConfiguration() while defining the topology. (See example topology)
+
+# TODO: topology name confiuration instruction
+# TODO: add jar export instruction installation instruction
+# TODO: add storm config instruction
