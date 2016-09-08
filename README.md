@@ -1,4 +1,4 @@
-### Group Aware Scheding of Storm Topology ###
+# Group Aware Scheding of Storm Topology ###
 
 The storm scheduler is responsible for assignment of of the components (bolts and spouts)
 to the processes and the machines they run on. A scheduler works in two phases
@@ -16,6 +16,6 @@ up the job of assigning processes to machines.
 The components can be added to the same group by specifying the same group ID via the
 addConfiguration() while defining the topology. (See example topology)
 
-# TODO: topology name confiuration instruction
-# TODO: add jar export instruction installation instruction
-# TODO: add storm config instruction
+### TODO: topology name confiuration instruction
+### TODO: add jar export instruction installation instruction
+### TODO: add storm config instruction
